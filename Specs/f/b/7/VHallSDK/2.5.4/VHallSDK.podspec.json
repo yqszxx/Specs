@@ -18,5 +18,21 @@
     "git": "https://github.com/vhall20/vhallsdk_live_ios.git",
     "tag": "2.5.4"
   },
-  "source_files": "VHallSDK/*"
+  "source_files": [
+    "VHallSDK/*",
+    "VHallSDK/VHallFilterSDK/*"
+  ],
+  "libraries": [
+    "icucore",
+    "iconv",
+    "bz2.1.0",
+    "z"
+  ],
+  "vendored_libraries": [
+    "VHallSDK/libVHallSDK.a",
+    "VHallSDK/libVHLivePlay.a",
+    "VHallSDK/libVinnyLive.a",
+    "VHallSDK/VHallFilterSDK/libGPUImage.a",
+    "VHallSDK/VHallFilterSDK/libVHallFilterSDK.a"
+  ]
 }
